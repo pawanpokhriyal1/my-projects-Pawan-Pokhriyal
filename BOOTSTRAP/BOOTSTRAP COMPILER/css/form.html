@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bootstrap forms</title>
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+
+</head>
+
+<body>
+    <main class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-5    card mt-3 p-4">
+                <p class="text-center h4 text-primary">Add new restaurant here</p>
+                <form class="mx-4">
+                    <div class="form-floating mb-2">
+                        <input type="text" placeholder="Owner name" class="form-control fst-italic">
+                        <label for="" class="form-label text-primary fst-italic">Owner Name</label>
+                    </div>
+                    
+                    <div class="mb-2">
+                        <label for="" class="form-label">Name</label>
+                        <input type="text" placeholder="Enter Restaurant Name" class="form-control" />
+                    </div>
+                    <div>
+                        <label for="" class="form-label">Email</label>
+                    <div class="input-group mb-3 ">
+                        
+                        <input type="text" placeholder="abc" class="form-control" />
+                        <span class="input-group-text text-primary">@</span>
+                        <input type="text" placeholder="xyz.com" class="form-control" />
+                    </div>
+                    </div>
+                    <div class="mb-2">
+                        <label for="" class="form-label">Location</label>
+                        <select name="" id="" class="form-select">
+                            <option value="">select a location</option>
+                            <option value="">Delhi</option>
+                            <option value="">Mumbai</option>
+                            <option value="">Pune</option>
+                            <option value="">chennai</option>
+
+                        </select>
+
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-4 ">
+                            <label for="" class="form-label">Open At</label>
+                            <input type="time" placeholder="" class="form-control" />
+                        </div>
+
+                        <div class="col-4 ">
+                            <label for="" class="form-label">Close At</label>
+                            <input type="time" placeholder="" class="form-control" />
+                        </div>
+                    </div>
+                    <div class=" mb-2">
+                        <label for="" class="form-label">Is Bar Available?</label>
+                        <div class="d-flex ">
+                            <div class="form-check ms-2 me-2">
+                                <input type="radio" name="baravailable" class="form-check-input" />
+                                <label for="" class="form-check-label">yes</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" name="baravailable" class="form-check-input" />
+                                <label for="" class="form-check-label">no</label>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-outline-success me-3 my-2 px-3"> save </button>
+                        <button class="btn btn-danger my-2 px-3 ">cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

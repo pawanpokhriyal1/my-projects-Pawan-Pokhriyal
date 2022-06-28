@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Responsive Home page using CSS BOOTSTRAP</title>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="./assignment2.css">
+    <link rel="stylesheet" href="/image/poppins/Poppins-Regular.otf">
+    <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="/js/bootstrap.js"></script>
+    <style> @media only screen 
+        and (min-device-width: 375px) 
+        and (max-device-width: 812px) 
+        and (-webkit-min-device-pixel-ratio: 3) { 
+            .mast-head{
+                height:40vh;
+            }
+      
+      }
+      </style>
+
+</head>
+
+<body>
+   
+    
+    <div class="modal fade" id="login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header ">
+                    <h5 class="modal-title" id="staticBackdropLabel">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body ms-5 ps-5">
+                    <p><button class="border border-muted my-2 btn btn-outline-success "><i class="fa fa-envelope  fa-2x text-danger mx-2"
+                                aria-hidden="true"></i><span class="text-primary">Continue with Gmail</span></button></p>
+                    <p><button class="border border-muted my-2 btn btn-outline-success"><i class="fa fa-facebook-official fa-2x text-bg-primary mx-2"
+                                aria-hidden="true"></i><span class="text-primary">Continue with Facebook</span></button></p>
+                </div>
+                <div class="modal-footer">
+                    <p  class="text-primary  " >Don’t have account? </p>
+                    <button type="button" class="btn btn-outline-danger">Sign UP</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main class="container-fluid uppersection-background mast-head ">
+        <section class="row ">
+            <div class="col-12">
+                <div class="d-flex justify-content-end container align-items-center mt-3">
+                    <button class="btn btn-sm text-white light " data-bs-toggle="modal" data-bs-target="#login">Login</button>
+                    <button class="btn btn-sm border-1 border-light text-white light">Create an account</button>
+                </div>
+
+
+            </div>
+
+        </section>
+        <section class="row container ">
+            <div class="col-lg-12 col-sm-11 col-md-12 d-flex justify-content-center">
+                <p class="display-2 fw-bold text-danger bg-white logo-text d-flex align-items-center justify-content-center">e!</p>
+            </div>
+        </section>
+        <section class="row  container">
+            <div class="col-lg-12 col-sm-6 d-flex justify-content-center">
+                <p class="h2  fw-bold text-primary  ">Find the best restaurants, cafés, and bars</p>
+            </div>
+            <div class="col-12 d-flex  justify-content-center ">
+                <div class="ms-lg-5 ps-lg-5 mt-lg-4 me-0 ">
+                    <input type="text" placeholder="Please type a location" class=" form-control fst-italic  search-box1" >
+                    <ul class="bg-secondary mt-1 location-box text-black ">
+                    
+                        <li class="p-1 h7 ">Sarjapur Road,</li>
+                        <li class="p-1 h7 "> Bengaluru HSR Layout,</li>
+                        <li class="p-1 h7 "> Bengaluru Kormangala, </li>
+                        <!-- <li class="p-1 h7 ">Bengaluru Jay Nagar, </li>
+                        <li class="p-1 h7 ">Bengaluru</li>
+                         -->
+                    </ul>
+                    </div>
+                    <div>
+                        <div class="me-lg-5 pe-lg-5 mt-lg-4 me-sm-0 ms-sm-5 ps-sm-2 d-flex" class="input-group">
+                            <span class="input-group-text " id="basic-addon1"><i class="fa fa-search " aria-hidden="true"></i></span>
+                            <input type="text" placeholder="Search   for   restaurants" class="form-control  fst-italic search-box"
+                                aria-label="Search   for   restaurants" aria-describedby="basic-addon1">
+                        </div>
+                    
+                        <ul class="ms-5 ps-5 bg-secondary restau-list ">
+                    
+                            <li class="">
+                                <div class="d-flex p-2 border border-opacity-50 restau-icon">
+                                    <img src="./img1.png"  class="image-edit">
+                                    <div class="ms-4">
+                                        <p class="h6 text-primary p-0 m-0">The Big Chill Cakery</p>
+                                        <p class="h7 text-muted p-0 m-0">Sarjapur Road, Bengaluru</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="">
+                                <div class="d-flex p-2 border border-opacity-50 restau-icon">
+                                    <img src="./img1.png"  class="image-edit">
+                                    <div class="ms-4">
+                                        <p class="h6 text-primary p-0 m-0">The Big Chill Cakery</p>
+                                        <p class="h7 text-muted p-0 m-0">Sarjapur Road, Bengaluru</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- <li class="">
+                                <div class="d-flex p-2 border border-opacity-50 restau-icon">
+                                    <img src="./img1.png"  class="image-edit">
+                                    <div class="ms-4">
+                                        <p class="h6 text-primary p-0 m-0">The Big Chill Cakery</p>
+                                        <p class="h7 text-muted p-0 m-0">Sarjapur Road, Bengaluru</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="">
+                                <div class="d-flex p-2 border border-opacity-50 restau-icon">
+                                    <img src="./img1.png"  class="image-edit">
+                                    <div class="ms-4">
+                                        <p class="h6 text-primary p-0 m-0">The Big Chill Cakery</p>
+                                        <p class="h7 text-muted p-0 m-0">Sarjapur Road, Bengaluru</p>
+                                    </div>
+                                </div>
+                            </li>
+                     -->
+                    
+                        </ul>
+                    </div>
+                    </div>
+                    </section>
+
+
+
+
+    </main>
+    <main class="container">
+        <section class="row ms-5">
+            <div class="col-12 h4 text-primary fw-semibold  mt-2">Quick Searches</div>
+            <div class="col-12 h7 text-muted fw-semibold  ms-1">Discover restaurants by type of meal</div>
+        </section>
+        <section class="row justify-content-evenly ">
+            <div class="col-lg-3 col-sm-8 border border-dark p-0  my-lg-3  mx-lg-3 m-sm-2  m-md-2  d-flex">
+                <img src="./img2.png" alt="" class="image-text m-0 p-0">
+                <div class="m-0 p-0">
+                    <p class="h5 text-primary m-3">Breakfast</p>
+                    <p class="h6 text-muted m-2">Start your day with exclusive breakfast options</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-8 border border-dark p-0  my-lg-3  mx-lg-3 m-sm-2 m-md-2  d-flex">
+                <img src="./img2.png" alt="" class="image-text m-0 p-0">
+                <div class="m-0 p-0">
+                    <p class="h5 text-primary m-3">Breakfast</p>
+                    <p class="h6 text-muted m-2">Start your day with exclusive breakfast options</p>
+                </div>
+            </div> <div class="col-lg-3 col-sm-8 border border-dark p-0  my-lg-3  mx-lg-3 m-sm-2 m-md-2  d-flex">
+                <img src="./img2.png" alt="" class="image-text m-0 p-0">
+                <div class="m-0 p-0">
+                    <p class="h5 text-primary m-3">Breakfast</p>
+                    <p class="h6 text-muted m-2">Start your day with exclusive breakfast options</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-8 border border-dark p-0  my-lg-3  mx-lg-3 m-sm-2  m-md-2 d-flex">
+                <img src="./img2.png" alt="" class="image-text m-0 p-0">
+                <div class="m-0 p-0">
+                    <p class="h5 text-primary m-3">Breakfast</p>
+                    <p class="h6 text-muted m-2">Start your day with exclusive breakfast options</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-8 border border-dark p-0  my-lg-3  mx-lg-3 m-sm-2  m-md-2 d-flex">
+                <img src="./img2.png" alt="" class="image-text m-0 p-0">
+                <div class="m-0 p-0">
+                    <p class="h5 text-primary m-3">Breakfast</p>
+                    <p class="h6 text-muted m-2">Start your day with exclusive breakfast options</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-8 border border-dark p-0  my-lg-3  mx-lg-3 m-sm-2 m-md-2  d-flex">
+                <img src="./img2.png" alt="" class="image-text m-0 p-0">
+                <div class="m-0 p-0">
+                    <p class="h5 text-primary m-3">Breakfast</p>
+                    <p class="h6 text-muted m-2">Start your day with exclusive breakfast options</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

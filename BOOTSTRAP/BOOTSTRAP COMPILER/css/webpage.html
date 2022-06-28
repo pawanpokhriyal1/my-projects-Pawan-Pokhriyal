@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DYNAMIC WEBPAGE USING BOOTRSTRAP</title>
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/webpage.css" />
+    <script src="/js/bootstrap.js"></script>
+</head>
+
+<body>
+    <div class="modal fade" id="login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header ">
+                    <h5 class="modal-title" id="staticBackdropLabel">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body ms-5 ps-5">
+                    <p><button class="border border-muted my-2 btn btn-outline-success "><i class="fa fa-envelope  fa-2x text-danger mx-2"
+                                aria-hidden="true"></i><span class="text-primary">Continue with Gmail</span></button></p>
+                    <p><button class="border border-muted my-2 btn btn-outline-success"><i class="fa fa-facebook-official fa-2x text-bg-primary mx-2"
+                                aria-hidden="true"></i><span class="text-primary">Continue with Facebook</span></button></p>
+                </div>
+                <div class="modal-footer">
+                    <p  class="text-primary  " >Don’t have account? </p>
+                    <button type="button" class="btn btn-outline-danger">Sign UP</button>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <main class="container-fluid">
+        <header class="row">
+            <div class="col-12 bg-danger my-0">
+                <div class="container d-flex align-item-center justify-content-between my-0 py-2">
+                    <p class="brand-logo display-4 fw-bold  text-danger">e!</p>
+                    <div class="d-flex align-items-center justify-content-between ">
+                        <button class="text-white light  btn btn-outline" data-bs-toggle="modal" data-bs-target="#login">Login</button>
+                        <button class="text-white light  btn border-white ">Create an account</button>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+        <section class="container ">
+            <p class="h1 fw-bold  ms-4 mt-5 mb-0 ">Breakfast Places in Mumbai</p>
+            <div class="row mt-5">
+                <div class="col-lg-3 col-md-4 col-12 border border-dark mb-3 ms-lg-4 mx-sm-3 ps-3">
+                    <div class="d-flex justify-content-between">
+                        <p class="text-primary fw-bold h6 py-2">Filters</p>
+                        <button class="btn btn-outline-success my-2 d-lg-none d-md-none " data-bs-toggle="collapse" data-bs-target="#hidebutton" aria-controls="hidebutton">Hide</button>
+                    </div>
+                    <!-- location -->
+                    <div class="collapse show" id="hidebutton">
+                        <label for="" class="form-label text-muted fw-semibold h7 mb-3">Location</label>
+                        <select name="" id="" class="form-select mb-3">
+                            <option value="">select a location</option>
+                            <option value="">Delhi</option>
+                            <option value="">Mumbai</option>
+                            <option value="">Pune</option>
+                            <option value="">chennai</option>
+
+                        </select>
+                        <!-- cuisine -->
+
+                        <p class="text-muted fw-semibold h7 mb-3">Cuisine</p>
+                        <div class="form-check">
+                            <input type="checkbox" name="baravailable" class="form-check-input" />
+                            <label for="" class="form-check-label text-muted fw-semibold h7">North Indian</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" name="baravailable" class="form-check-input" />
+                            <label for="" class="form-check-label text-muted fw-semibold h7">South Indian</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" name="baravailable" class="form-check-input" />
+                            <label for="" class="form-check-label text-muted fw-semibold h7">Chinese</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" name="baravailable" class="form-check-input" />
+                            <label for="" class="form-check-label text-muted fw-semibold h7">Fast Food</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" name="baravailable" class="form-check-input" />
+                            <label for="" class="form-check-label text-muted fw-semibold h7">Street Food</label>
+                        </div>
+                        <!-- cost -->
+                        <p class="text-muted fw-semibold h7 mt-3">Cost For Two</p>
+                        <div class="form-check">
+                            <input type="radio" name="cost" class="form-check-input" />
+                            <label for="" class="form-check-label text-muted fw-semibold h7">Less than ` 500</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="cost" class="form-check-input" />
+                            <label for="" class="form-check-label text-muted fw-semibold h7">` 500 to ` 1000</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="cost" class="form-check-input" />
+                            <label for="" class="form-check-label text-muted fw-semibold h7">` 1000 to ` 1500</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="cost" class="form-check-input" />
+                            <label for="" class="form-check-label text-muted fw-semibold h7">` 1500 to ` 2000</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="cost" class="form-check-input" />
+                            <label for="" class="form-check-label text-muted fw-semibold h7">` 2000+</label>
+                        </div>
+                        <!-- sort -->
+                        <p class="text-muted fw-semibold h7 mt-3">Sort</p>
+                        <div class="form-check">
+                            <input type="radio" name="cost" class="form-check-input" />
+                            <label for="" class="form-check-label text-muted fw-semibold h7">Price low to high</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="cost" class="form-check-input" />
+                            <label for="" class="form-check-label text-muted fw-semibold h7">Price high to low</label>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-8 col-12 col-md-6 ms-lg-5  mx-sm-1">
+                    <div class="border border-dark px-3 pt-2">
+                        <div class="d-flex p-2">
+                            <img src="/image/img2.png" alt="" class="image-search">
+                            <div class="ms-4">
+                                <p class="h3 fw-bold">The Big Chill Cakery</p>
+                                <p class="text-muted fw-semibold">FORT</p>
+                                <p class="text-muted fw-semibold"><i class="fa fa-map-marker fa-2x text-danger"
+                                        aria-hidden="true"></i>Shop 1, Plot D, Samruddhi Complex, Chincholi …</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="d-flex">
+                            <div>
+                                <p class="text-muted fw-semibold  ">CUISINES: </p>
+                                <p class="text-muted fw-semibold mt-3 ">COST FOR TWO:</p>
+                            </div>
+                            <div class="">
+                                <p class="text-primary fw-semibold  ms-4">Bakery </p>
+                                <p class="text-primary fw-semibold  ms-4">₹700</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border border-dark px-3 pt-2 mt-3">
+                        <div class="d-flex p-2">
+                            <img src="/image/img2.png" alt="" class="image-search">
+                            <div class="ms-4">
+                                <p class="h3 fw-bold">The Big Chill Cakery</p>
+                                <p class="text-muted fw-semibold">FORT</p>
+                                <p class="text-muted fw-semibold"><i class="fa fa-map-marker fa-2x text-danger"
+                                        aria-hidden="true"></i>Shop 1, Plot D, Samruddhi Complex, Chincholi …</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="d-flex">
+                            <div>
+                                <p class="text-muted fw-semibold  ">CUISINES: </p>
+                                <p class="text-muted fw-semibold mt-3">COST FOR TWO:</p>
+                            </div>
+                            <div class="">
+                                <p class="text-primary fw-semibold  ms-4">Bakery </p>
+                                <p class="text-primary fw-semibold  ms-4">₹700</p>
+                            </div>
+                        </div>
+                    </div>
+                    <nav class="col-12 mt-3 d-flex justify-content-center">
+                        <ul class="pagination">
+                            <li class="page-item border border-muted fw-bold"><a href="#">&lt;</a></li>
+                            <li class="page-item border border-muted fw-bold">1</li>
+                            <li class="page-item border border-muted fw-bold">2</li>
+                            <li class="page-item border border-muted fw-bold">3</li>
+                            <li class="page-item border border-muted fw-bold">4</li>
+                            <li class="page-item border border-muted fw-bold">5</li>
+                            <li class="page-item border border-muted fw-bold">6</li>
+                            <li class="page-item border border-muted fw-bold"><a href="#">&gt;</a></li>
+
+                        </ul>
+                    </nav>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+.uppersection-background {
+background-image:linear-gradient(transparent,rgba(0, 0, 0, 0.604)), url(./shutterstock_348320018.png) ;
+background-size:cover;
+background-repeat: no-repeat;
+background-position:center;
+height:calc(45vh);
+
+}
+.logo-text{
+    width: 110px;
+    height: 110px;
+    border-radius: 55px;
+   
+}
+.image-text{
+    width: 110px;
+    height: 110px;
+    margin-left: 0;
+    padding-left: 0;
+    
+}
+.search-box{
+    width: 22vw;
+    
+}
+/* .search-box li{
+   display: block;
+} */
+.image-edit{
+    width:40px;
+    height: 40px;
+    border-radius: 50px;
+}
+*{
+    box-sizing:border-box;
+}
+.restau-list li{
+    display:block;
+   
+    
+}
+.restau-list {
+    width: 25vw;
+   
+    
+}
+
+.restau-icon{
+
+    height: 8vh;
+   
+    
+}
+.location-box li{
+    display:block;
+    margin-right: 25px;
+    
+   
+    
+}
