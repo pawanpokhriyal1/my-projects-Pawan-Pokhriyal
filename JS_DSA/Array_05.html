@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting,merging along with sorting</title>
+
+
+</head>
+
+<body>
+
+    <!-- <button onclick="myadd()">Click to get result</button>
+    <div>array 1</div>
+    <div id="show"></div>
+    <div>array 2</div>
+    <div id="warn"></div>
+    <ul id="old">
+
+    </ul> -->
+
+
+    <script>
+        let arr_1 = [71, 22, 35, 74, 51, 69];
+        let arr_2 = [87, 78, 19, 30, 44, 62];
+        let stack3 = [];
+        var i = 0;
+        var j = 0;
+        var k = 0;
+        let temp;
+// Sorting
+
+        for (i = 0; i < arr_1.length; i++) {
+            for (let m = (i + 1); m < arr_1.length; m++) {
+                if (arr_1[i] > arr_1[m]) {
+                    temp = arr_1[i];
+                    arr_1[i] = arr_1[m];
+                    arr_1[m] = temp;
+                }
+            }
+        }
+        console.log(arr_1);
+
+        for (j = 0; j < arr_2.length; j++) {
+            for (let n = (j + 1); n < arr_2.length; n++) {
+                if (arr_2[j] > arr_2[n]) {
+                    temp = arr_2[j];
+                    arr_2[j] = arr_2[n];
+                    arr_2[n] = temp;
+                }
+            }
+        }
+        console.log(arr_2);
+        console.log(stack3);
+        k = 0;
+        i = 0;
+        j = 0;
+
+        ////    MERGING ALONG WITH SORTING
+
+        while (i < arr_1.length && j < arr_2.length) {
+            if (arr_1[i] < arr_2[j]) {
+                stack3[k] = arr_1[i];
+                console.log(stack3[k]);
+                i++;
+            }
+            else {
+                stack3[k] = arr_2[j];
+                j++;
+                console.log(stack3[k]);
+            }
+            k++;
+        }
+        if (i < arr_1.length) {
+            while (i < arr_1.length) {
+
+                stack3[k] = arr_1[i];
+                k++;
+                i++
+            }
+        }
+        else {
+            while (j < arr_2.length) {
+
+                stack3[k] = arr_2[j];
+                k++;
+                j++
+            }
+        }
+
+
+        console.log(stack3);
+
+
+    </script>
+</body>
+
+</html>

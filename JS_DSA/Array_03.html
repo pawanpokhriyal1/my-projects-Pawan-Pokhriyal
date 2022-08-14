@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search In Array</title>
+
+
+</head>
+
+<body>
+    <input type="text" placeholder="enter element to search" id="element">
+    <button onclick="Search_op()">Click to get result</button>
+    <ul id="old">
+
+    </ul>
+
+    <div id="show"></div>
+    <div id="warn"></div>
+    <script>
+        var list = [4, 5, 6, 54, 8, 78, 75, 55, 65, 15];
+        function Search_op() {
+            let list = [4, 5, 6, 54, 8, 78, 75, 55, 65, 15];
+
+            let pos;
+            let el = parseInt(document.getElementById('element').value);
+            console.log(list.indexOf(el));
+            for (let i = 0; i < list.length; i++) {
+                if (list[i] === el) {
+                    pos = i;
+                    document.getElementById('show').innerText = `element ${el} is found at location : ${pos}`;
+                    
+                }
+                
+                else {
+                    document.getElementById('warn').innerHTML += `<div>Input ${el} not found at : loc ${i}</div>`;
+                }
+            }
+
+
+
+
+
+        }
+        let myArray = '';
+        for (let i = 0; i < list.length; i++) {
+
+            myArray += `<li>${list[i]}</li>`;
+        }
+        document.getElementById('old').innerHTML = myArray;
+
+
+
+
+    </script>
+</body>
+
+</html>

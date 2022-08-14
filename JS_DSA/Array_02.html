@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deletion of Array Element</title>
+    <script>
+        function delete_Element() {
+            let group = [7, 8, 25, 89, 7, 8, 6, 5, 45, 1, 4, 22, 3];
+            pos = parseInt(document.getElementById('delpos').value);
+            console.log('before deletion', group);
+            let oldArray='';
+            for(let i=0;i<group.length;i++){
+              
+                oldArray+=`<li>${group[i]}</li>`;
+            }
+            document.getElementById('old').innerHTML=oldArray;
+            if (pos <= group.length) {
+                for (let i = pos; i < group.length; i++) {
+                    group[i] = group[i + 1];
+                    // if (i === group.length - 1) {
+                    //     // group.pop(group[i]);
+
+                    // }
+                }
+                
+            }
+            else
+            {
+                alert('invalid index input');
+            }
+            group.length = group.length-1;
+            console.log(group);
+            let newArray='';
+            for(let i=0;i<group.length;i++){
+                
+                newArray+=`<li>${group[i]}</li>`;
+            }
+            document.getElementById('update').innerHTML=newArray;
+
+        }
+
+
+    </script>
+</head>
+
+<body>
+    <input type="text" placeholder="Enter the index which you want to delete" id="delpos">
+    <button onclick="delete_Element()">Click to see updated array</button>
+    <div>Array Before Deletion</div><ul id="old"></ul>
+    <div>Array after deletion</div><ul id="update"></ul>
+
+</body>
+
+</html>

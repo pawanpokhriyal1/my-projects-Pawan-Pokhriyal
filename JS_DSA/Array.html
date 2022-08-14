@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSA TOPIC ARRAY</title>
+    <script>
+        let myarr=[12,5,6,4,7,5,6,78,54,5,8,3,5];
+
+        function getArrayElement()
+        {
+            let el=document.getElementById('element').value;
+            if(el<myarr.length && typeof parseInt(el)===Number){
+            alert(myarr[el]);
+            }
+            else {
+                alert(`please Enter index value less than :${myarr.length}`);
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="element"/>
+    <button onclick="getArrayElement()">Get Acces to element at choice of your index</button>
+</body>
+</html>

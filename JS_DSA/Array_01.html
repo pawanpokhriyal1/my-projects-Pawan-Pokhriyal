@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INSERT ELEMENT IN ARRAY INDEXES</title>
+    <script>
+        // let stack = [78, 51, 15, 84, 44, 56, 64, 54, 22, 43];
+        // let insEl = document.getElementById('newelement').value;
+        // let pos = document.getElementById('location').value;
+        // console.warn(stack);
+        // for (let i = stack.length - 1; i >= pos; i--) {
+        //     if (i > pos) {
+        //         stack[i + 1] = stack[i];
+        //     }
+        //     else if (i === pos) {
+        //         stack[i + 1] = stack[i];
+        //         stack[i] = insEl;
+        //     }
+
+        // }
+        function myArr() {
+            let stack = [78, 51, 15, 84, 44, 56, 64, 54, 22, 43];
+            let insEl = parseInt(document.getElementById('newelement').value);
+            let pos = parseInt(document.getElementById('location').value);
+            console.log('Array Before insertion', stack);
+            if (pos < stack.length) {
+                for (let i = stack.length - 1; i >= pos; i--) {
+                    if (i > pos) {
+                        stack[i + 1] = stack[i];
+                    }
+                    else if (i === pos) {
+                        stack[i + 1] = stack[i];
+                        stack[i] = insEl;
+                    }
+
+                }
+
+            }
+
+            else {
+                alert("Please enter the valid index position ");
+            }
+
+            let html = '';
+            for (i = 0; i < stack.length; i++) {
+                html += `<li>${stack[i]}</li>`
+            }
+            document.getElementById('stacklist').innerHTML = html;
+
+            console.log('ARRAY AFTER INSERTION',stack);
+            stack.splice(0,0,2000);// splice do the same function which is performed by this algorithm
+            console.log(stack);
+
+
+        }
+        let c=myArr();
+        console.log(c);
+
+    </script>
+</head>
+<input type="text" placeholder="Enter element to be inserted" id="newelement">
+<input type="text" placeholder="enter position to be inserted " id="location">
+<button onclick="myArr()">Click to see the new array after insertion</button>
+<ul id="stacklist"></ul>
+
+<body>
+
+</body>
+
+</html>

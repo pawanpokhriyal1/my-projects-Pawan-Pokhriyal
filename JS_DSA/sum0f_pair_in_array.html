@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sum of array pairs</title>
+</head>
+
+<body>
+    <script>
+        let st = [-4, 3, -8, 6, -7, 2, -9, -6];
+        function myfunc(st) {
+            for (let number of st) {
+                for (let j = 1; j < st.length - 1; j++) {
+                    if (number + st[j] === 0) {
+                        return [number, st[j]];
+                    }
+                }
+            }
+        }
+        let f = myfunc(st);
+        console.log(f);
+
+     
+
+
+let str = [-8, -5, -3, -1, 2, 5, 7, 12];
+function myfunc1(str) {
+    let left = 0;
+    let right = str.length - 1;
+    while (str[left] < str[right]) {
+        if (str[right] + str[left] === 0) {
+            return [str[left], str[right]];
+        }
+        else if ((str[right] + str[left]) > 0) {
+            right--;
+        }
+        else {
+            left++;
+        }
+    }
+}
+let g = myfunc1(str);
+console.log(g);
+
+
+    </script>
+</body>
+
+</html>
